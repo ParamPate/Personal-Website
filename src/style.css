@@ -105,3 +105,8 @@ button:focus-visible, article:focus-visible, section:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+.trainer { animation: trainer-idle 700ms steps(2, end) infinite; }
+@keyframes trainer-idle {
+  50% { transform: translateY(-4px) rotate(2deg); }
+}
