@@ -172,7 +172,7 @@ export default function App(){
        <Ball/>
       </div>
       <div className="card-tags">
-       <span>CS @ U OF T</span><span>AI + VISION</span><span>TEAM PLAYER</span>
+       <span>CS @ U OF T</span><span>AI + VISION</span><span>SOFTWARE DEVELOPER</span>
       </div>
      </div>
      <div className="card-footnote"><span aria-hidden="true">↳</span> A new adventure is always a good idea.</div>
