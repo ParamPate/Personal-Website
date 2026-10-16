@@ -1,0 +1,6 @@
+node_modules/
+dist/
+
+# Local AI instructions and planning notes
+AGENTS.md
+DESIGN-NOTES.md
