@@ -12,7 +12,7 @@ function Ball({className=''}){return <span aria-hidden="true" className={`pokeba
 function App(){
  return <div className="site-shell">
   <a className="skip" href="#about">Skip to content</a>
-  <header><a className="wordmark" href="#about" aria-label="Param Patel home"><Ball/>param<span>patel</span><span className="wordmark-dot">.</span></a><nav aria-label="Main navigation"><a className="current" href="#about">About me</a><a href="https://github.com/ParamPate" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a className="contact-link" href="mailto:para.patel@mail.utoronto.ca">Say hello <span aria-hidden="true">↗</span></a></nav></header>
+  <header><a className="wordmark" href="#about" aria-label="Param Patel home"><Ball/>param<span>patel</span><span className="wordmark-dot">.</span></a><nav aria-label="Main navigation"><a className="current" href="#about">About me</a><a href="https://github.com/ParamPate" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/param-patel-9589b226a/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a className="contact-link" href="mailto:para.patel@mail.utoronto.ca">Say hello <span aria-hidden="true">↗</span></a></nav></header>
   <main id="about">
    <section className="intro" aria-labelledby="intro-title">
     <div className="intro-copy">
