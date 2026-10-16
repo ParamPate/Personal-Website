@@ -106,7 +106,11 @@ button:focus-visible, article:focus-visible, section:focus-visible {
   html { scroll-behavior: auto; }
 }
 
-.trainer { animation: trainer-idle 700ms steps(2, end) infinite; }
-@keyframes trainer-idle {
-  50% { transform: translateY(-4px) rotate(2deg); }
-}
+.trainer { animation: trainer-bob 600ms steps(2, end) infinite; }
+.trainer-arm, .trainer-leg { transform-box: fill-box; animation: trainer-step 600ms steps(2, end) infinite alternate; }
+.trainer-arm-left { transform-origin: 100% 0; }
+.trainer-arm-right { transform-origin: 0 0; }
+.trainer-leg { transform-origin: 50% 0; }
+.trainer-arm-left, .trainer-leg-right { animation-delay: -300ms; }
+@keyframes trainer-bob { 50% { transform: translateY(-3px); } }
+@keyframes trainer-step { to { transform: rotate(18deg); } }

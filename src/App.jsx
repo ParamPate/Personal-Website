@@ -3,7 +3,10 @@ import React from 'react';
 function Trainer(){
   return <svg className="trainer" viewBox="0 0 24 36" role="img" aria-label="Pixel trainer with brown skin and black hair" shapeRendering="crispEdges">
     <path fill="#172e50" d="M7 1h10v2h3v7H5V4h2z"/><path fill="#ae693f" d="M6 8h13v9h-3v3H9v-3H6z"/><path fill="#d18b56" d="M8 9h10v7H8z"/><path fill="#172e50" d="M9 10h2v2H9zm6 0h2v2h-2z"/><path fill="#713d32" d="M11 15h4v1h-4z"/>
-    <path fill="#e84043" d="M6 18h12v3h3v9H3v-9h3z"/><path fill="#fcfaf4" d="M10 18h5v11h-5z"/><path fill="#ae693f" d="M1 23h4v8H1zm18 0h4v8h-4z"/><path fill="#265a9a" d="M6 29h12v5h-5v-3h-2v3H6z"/><path fill="#172e50" d="M4 34h7v2H4zm9 0h7v2h-7z"/><path fill="#fff" d="M4 34h5v1H4zm11 0h5v1h-5z"/>
+    <path fill="#e84043" d="M6 18h12v3h3v9H3v-9h3z"/><path fill="#fcfaf4" d="M10 18h5v11h-5z"/>
+    <path className="trainer-arm trainer-arm-left" fill="#ae693f" d="M1 23h4v8H1z"/><path className="trainer-arm trainer-arm-right" fill="#ae693f" d="M19 23h4v8h-4z"/>
+    <g className="trainer-leg trainer-leg-left"><path fill="#265a9a" d="M6 29h6v5H6z"/><path fill="#172e50" d="M4 34h7v2H4z"/><path fill="#fff" d="M4 34h5v1H4z"/></g>
+    <g className="trainer-leg trainer-leg-right"><path fill="#265a9a" d="M13 29h5v5h-5z"/><path fill="#172e50" d="M13 34h7v2h-7z"/><path fill="#fff" d="M15 34h5v1h-5z"/></g>
   </svg>;
 }
 function Ball({className=''}){return <span aria-hidden="true" className={`pokeball ${className}`}><i/></span>}
