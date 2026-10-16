@@ -20,7 +20,7 @@ function App(){
      <p className="eyebrow"><span/>TORONTO, ON · PLAYER ONE</p>
      <h1 id="intro-title">Hey, I’m<br/><span>Param.</span></h1>
      <p className="lead">A curious mind.<br/>A competitive streak.</p>
-     <p className="bio">I’m a computer science student at <strong>U of T</strong>, interested in software engineering and AI. Outside class, I’m usually playing basketball, ping-pong, tennis, or soccer—sometimes finding a way to bring the two together.</p>
+     <p className="bio">I’m a computer science student at <strong>U of T</strong>, interested in software engineering and AI. Outside class, I’m usually playing basketball, tennis, or mixing tech and sports</p>
      <a className="hello-button" href="mailto:para.patel@mail.utoronto.ca">Let’s talk <span aria-hidden="true">↗</span></a>
      <div className="tiny-note"><span className="small-line"/> Always up for a good project.</div>
     </div>
