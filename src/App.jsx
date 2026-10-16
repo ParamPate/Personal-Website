@@ -7,6 +7,7 @@ function Trainer(){
   </svg>;
 }
 function Ball({className=''}){return <span aria-hidden="true" className={`pokeball ${className}`}><i/></span>}
+const publicAsset = path => `${import.meta.env.BASE_URL}${path}`;
 // Dates and metrics: October 2026 resume. Project details also use the linked repo READMEs.
 export const PORTFOLIO_DATA = {
   work: [
@@ -71,7 +72,7 @@ export const PORTFOLIO_DATA = {
       description: 'I built a referee that tracks the ball, detects table bounces, and scores rallies. A FastAPI backend sends live game state to the React interface.',
       metric: '90% bounce-detection accuracy · 7 fps',
       tech: ['Python', 'OpenCV', 'Kalman filter', 'FastAPI', 'React', 'NumPy'],
-      sprite: '/sprites/4.png',
+      sprite: publicAsset('sprites/charmander.gif'),
       links: [
         {label: 'Backend', url: 'https://github.com/ParamPate/AI-referee'},
         {label: 'Frontend', url: 'https://github.com/ParamPate/RefAI_FrontEnd'},
@@ -84,7 +85,7 @@ export const PORTFOLIO_DATA = {
       description: 'I trained a Random Forest on 40 seasons of NBA metrics and built a dashboard for comparing teams and testing what-if scenarios. Matchup estimates derive from championship probabilities.',
       metric: '40 seasons · 78% holdout accuracy',
       tech: ['Python', 'scikit-learn', 'FastAPI', 'React', 'Supabase', 'pandas', 'NumPy'],
-      sprite: '/sprites/9.png',
+      sprite: publicAsset('sprites/gengar.gif'),
       links: [{label: 'Repository', url: 'https://github.com/ParamPate/NBA-Playoff-AI-Match-Analysis-System'}],
     },
     {
@@ -95,7 +96,7 @@ export const PORTFOLIO_DATA = {
       metric: '90% Braille detection accuracy · 7 fps',
       // The repo describes a laptop prototype; Raspberry Pi and haptics are future work.
       tech: ['Python', 'PyTorch', 'YOLOv8', 'MediaPipe', 'OpenCV', 'NumPy'],
-      sprite: '/sprites/658.png',
+      sprite: publicAsset('sprites/greninja.gif'),
       links: [{label: 'Repository', url: 'https://github.com/ParamPate/H.A.N.D.S'}],
     },
     {
@@ -105,7 +106,7 @@ export const PORTFOLIO_DATA = {
       description: 'Our team built an Android artifact management app for the Toronto Asian Art Museum, with Firebase-backed records and cloud image storage.',
       metric: 'The museum asked to use the system.',
       tech: ['Java', 'Android', 'Firebase', 'XML'],
-      sprite: '/sprites/25.png',
+      sprite: publicAsset('sprites/snivy.gif'),
       links: [{label: 'Repository', url: 'https://github.com/ParamPate/TAAM-Artifact-Management-System'}],
     },
   ],
@@ -145,18 +146,15 @@ export default function App(){
   <main>
    <section id="about" className="intro" aria-labelledby="intro-title" tabIndex={-1}>
     <div className="intro-copy">
-     <img className="charmander-accent" src="/sprites/4.png" alt="" width="96" height="96"/>
+     <img className="charmander-accent" src={publicAsset('sprites/4.png')} alt="" width="96" height="96"/>
      <p className="eyebrow"><span/>TORONTO, ON · PLAYER ONE</p>
      <h1 id="intro-title">Hey, I’m<br/><span>Param.</span></h1>
-     <p className="bio">
-      I’m a Computer Science student at <strong>U of T</strong> building across software engineering and AI.
-      Outside of class, you’ll usually find me on the basketball or tennis court—or finding new ways to mix tech with sports.
-     </p>
+<p className="bio">CS @ <strong>U of T</strong>. I write code, train neural networks, and build systems that see and think. Usually splitting my time between multi-agent workflows, perception pipelines, and way too many Valorant games.</p>
      <a className="hello-button" href="mailto:para.patel@mail.utoronto.ca">Let’s talk <span aria-hidden="true">↗</span></a>
      <div className="tiny-note"><span className="small-line"/> Always up for a good project.</div>
     </div>
     <div className="profile-side">
-     <img className="rayquaza-accent" src="/sprites/384.png" alt="" width="96" height="96"/>
+     <img className="rayquaza-accent" src={publicAsset('sprites/384.png')} alt="" width="96" height="96"/>
      <div className="profile-card">
       <div className="card-header"><span>TRAINER CARD</span><span>No. 001</span></div>
       <div className="trainer-scene">
@@ -166,7 +164,7 @@ export default function App(){
        <span className="scene-plus p2">+</span>
        <div className="trainer-ground"/>
        <Trainer/>
-       <img className="companion" src="/sprites/25.png" alt="" width="96" height="96"/>
+       <img className="companion" src={publicAsset('sprites/25.png')} alt="" width="96" height="96"/>
        <span className="scene-caption">PARAM & PIKACHU</span>
       </div>
       <div className="card-info">

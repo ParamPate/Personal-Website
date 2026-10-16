@@ -1,7 +1,9 @@
 # Param's portfolio
 
-React + Vite with vanilla CSS. Run `npm install`, then `npm run dev`. Validate with `npm test` and `npm run build`.
+React, Vite, and vanilla CSS. Run `npm ci` and `npm run dev` to work locally. Use `npm test` and `npm run build` to check changes.
 
-Edit work, project, and skill content in `PORTFOLIO_DATA` above `App()` in `src/App.jsx`. Skill buttons preview matching cards on hover and keep highlights on click. Click again, use Clear selection, or press Escape within Skills to clear them. Arcade is deferred.
+Portfolio content lives in `PORTFOLIO_DATA` in `src/App.jsx`. The Skills section is a static list grouped by category.
 
-Pokémon PNG sprites are from [PokéAPI/sprites](https://github.com/PokeAPI/sprites); Pokémon characters belong to their respective owners. The trainer is an original simple SVG pixel drawing. No generated imagery is used.
+GitHub Pages deploys from `main` with GitHub Actions. Once Pages is enabled in repository settings, the site will be available at <https://parampate.github.io/Personal-Website/>.
+
+Pokémon sprites, including the animated GIFs, are from [PokéAPI/sprites](https://github.com/PokeAPI/sprites); Pokémon characters belong to their respective owners. The trainer is an original simple SVG pixel drawing. No generated imagery is used.
